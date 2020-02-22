@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+:root {
+  --lato: "Lato";
+  --sans: "Open Sans";
+  --mont: "Montserrat";
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #fc00ff, #00dbde);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+header a {
+  font-family: var(--mont);
+  font-size: 0.9em;
+  color: black;
+}
+header {
+  background: white;
+}
+header .nav-items {
+  padding: 0.9em;
+}
+header .nav-item:last-child {
+  padding-right: 24px;
+}
+header .navbar-brand {
+  color: #fc00ff;
+  padding-left: 16px;
+}
+
+header .nav-bar:hover {
+  color: red;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin, 1vmin;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: var(--lato);
+}
+
+header .row .col-md-5 img {
+  padding: 10vmin 1vmin;
+  width: 80%;
+}
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button {
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: rgb(47, 236, 173);
+}
+header .container .col-md-7 button:hover {
+  color: white;
+  transition: all 0.4s ease-out;
+  background-color: rgb(51, 80, 207);
+}
+
+.section-1 {
+  border: 1px solid rgb(51, 80, 207);
+}
+
+.section-1 .row .col-md-6 .panel {
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+
+  font-family: var(--sans);
+}
+.panel h1 {
+  border-bottom: 1px solid rgb(47, 236, 173);
+}
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+.section-1 .row .col-md-6 .panel p {
+  color: rgba(0, 0, 0, 0.5);
+
+  font-size: 0.9em;
+}
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+}
+
+.cover .content {
+  height: 100%;
+  width: 100%;
+  padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+  font-family: var(--lato);
+  font-size: 6vmin;
+}
+
+.cover .content > p {
+  font-family: var(--sans);
+  font-size: 2vmin;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  border: 2px solid rgb(47, 236, 173);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+}
+
+.numbers .rect > p {
+  font-family: var(--mont);
+}
+.section-3 {
+  padding: 10vmin 0;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+
+  padding: 14vmin 18vmin;
+}
+
+@media (max-width: 576px) {
+  header .row .col-md-5 img {
+    padding: 10vmin 1vmin;
+    width: 80%;
+  }
+  header .row .col-md-7 {
+    padding-bottom: 0vmin;
+  }
+  .section-1 .row .col-md-6 .panel {
+    position: relative;
+    left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .section-1 .row .col-md-6 .panel {
+    position: relative;
+    left: 0;
+  }
+  .section-1 .row .col-md-6 .pray {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  header .row .col-md-5 img {
+    padding: 22vmin 1vmin;
+    width: 80%;
+  }
+  header .row .col-md-7 {
+    padding-bottom: 0vmin;
+  }
+}
